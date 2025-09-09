@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Estilos globais */
+.global {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #000000;
+}
+
+/* Cabeçalho */
+.homepage-header {
+  width: 100%;
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 120px;
+  width: 200px;
+  object-fit: contain;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #f3f6fa;
+}
+
+/* Conteúdo principal */
+.homepage-main {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* Rodapé */
+.homepage-footer {
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%; /* O card ocupa toda a largura da tela */
+  max-width: 1200px; /* Define um limite máximo para telas muito grandes */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white; /* Texto branco */
+  margin: 0 auto; /* Centraliza o card horizontalmente */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-image-container {
+  width: 100%;
+  height: 400px; 
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 2rem; /* Espaçamento interno */
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 2rem; /* Aumentado o tamanho do título */
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  font-size: 1.2rem; /* Aumentado o tamanho do texto */
+  margin-bottom: 1.5rem;
+}
+
+.card-button {
+  display: inline-block;
+  background: white; /* Botão branco */
+  color:  #580707; /* Texto verde */
+  text-decoration: none;
+  padding: 1rem 2rem; /* Aumentado o tamanho do botão */
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card-button:hover {
+  background: linear-gradient(135deg, #070303 0%, #580707 100%); /* Fundo verde escuro */
+  color: white; /* Texto branco */
+}
