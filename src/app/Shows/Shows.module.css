@@ -1,0 +1,109 @@
+.homepage-header {
+  width: 100%;
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 120px;
+  width: 200px;
+  object-fit: contain;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #f3f6fa;
+}
+
+
+.carouselContainer {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.card {
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  color: white;
+}
+
+.cardImageContainer {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cardContent {
+  padding: 2rem;
+}
+
+.cardContent h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cardContent p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.cardButton {
+  display: inline-block;
+  background: #fff;
+  color: #580707;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cardButton:hover {
+  background: #580707;
+  color: #fff;
+}

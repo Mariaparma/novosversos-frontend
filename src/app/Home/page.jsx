@@ -10,10 +10,11 @@ const HomePage = () => {
         </div>
         <nav>
           <ul className={styles['nav-menu']}>
-            <li><a href="/Paises">Países</a></li>
-            <li><a href="/servicos">Roteiro</a></li>
-            <li><a href="/contato">Gastronomia</a></li>
-            <li><a href="/contato">Contato</a></li>
+            <li><a href="/Paises">Notícias</a></li>
+            <li><a href="/Shows">Shows</a></li>
+            <li><a href="/contato">Álbuns e Músicas</a></li>
+            <li><a href="/contato">Galeria</a></li>
+             <li><a href="/contato">Contato</a></li>
           </ul>
         </nav>
       </header>
