@@ -26,7 +26,7 @@ const HomePage = () => {
         <section className={styles.cards}>
           <div className={styles.card}>
             <div className={styles['card-image-container']}>
-              <img src="/images/novosversos2.png" alt="Imagem Genérica" className={styles['card-image']} />
+              <img src="/images/luansantanacapa1.png" alt="Imagem Genérica" className={styles['card-image']} />
             </div>
             <div className={styles['card-content']}>
               <h4 className={styles['card-title']}>Explore as princípais notícias do Luan Santana</h4>  
