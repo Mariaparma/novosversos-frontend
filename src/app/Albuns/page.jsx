@@ -14,6 +14,7 @@ const albums = [
     id: 'ao-vivo-rio',
     title: 'Ao Vivo no Rio (2010)',
     cover: 'https://upload.wikimedia.org/wikipedia/pt/e/ec/Luan_Santana_-_Ao_Vivo_no_Rio_de_Janeiro.jpg',
+    link: '/Musicas/Musicario',
   },
   {
     id: 'quando-chega-a-noite',
