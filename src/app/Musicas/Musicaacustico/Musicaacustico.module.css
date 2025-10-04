@@ -1,0 +1,72 @@
+.albumPage {
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  color: #fff;
+  padding: 2rem;
+}
+
+.albumLayout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.albumLeft {
+  flex: 1 1 300px;
+  max-width: 320px;
+  text-align: center;
+}
+
+.albumCover {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.albumTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.albumDescription {
+  font-size: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.albumRight {
+  flex: 2 1 600px;
+}
+
+.songGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.songCard {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.songName {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.songTrecho {
+  font-style: italic;
+  color: #ccc;
+  font-size: 0.95rem;
+}
