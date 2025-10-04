@@ -10,11 +10,11 @@ const HomePage = () => {
         </div>
         <nav>
           <ul className={styles['nav-menu']}>
-            <li><a href="/Paises">Notícias</a></li>
+            <li><a href="/Noticias">Notícias</a></li>
             <li><a href="/Shows">Shows</a></li>
-            <li><a href="/contato">Álbuns e Músicas</a></li>
-            <li><a href="/contato">Galeria</a></li>
-             <li><a href="/contato">Contato</a></li>
+            <li><a href="/Albuns">Álbuns e Músicas</a></li>
+            <li><a href="/Galeria">Galeria</a></li>
+             <li><a href="/Contato">Contato</a></li>
           </ul>
         </nav>
       </header>
@@ -41,7 +41,7 @@ const HomePage = () => {
             <div className={styles['card-content']}>
               <h4 className={styles['card-title']}>Descubra os próximos shows do Luan Santana</h4>
               <h4 className={styles['card-title']}>Descubra os melhores pontos turisticos pra fazer sua viagem mais especial </h4>
-              <a href="/Paises" className={styles['card-button']}>Descubra Mais</a>
+              <a href="/Shows" className={styles['card-button']}>Descubra Mais</a>
             </div>
 
             <div className={styles['card-image-container']}>
@@ -51,7 +51,7 @@ const HomePage = () => {
             <div className={styles['card-content']}>
               <h4 className={styles['card-title']}>Explore o melhor país pra você fazer sua viagem dos sonhos </h4>
               <h4 className={styles['card-title']}>Descubra a melhor gastronomia da sua viagem dos sonhos </h4>
-              <a href="/Paises" className={styles['card-button']}>Descubra Mais</a>
+              <a href="/Albuns" className={styles['card-button']}>Descubra Mais</a>
             </div>
 
             <div className={styles['card-image-container']}>
