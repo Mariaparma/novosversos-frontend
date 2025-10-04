@@ -20,16 +20,19 @@ const albums = [
     id: 'quando-chega-a-noite',
     title: 'Quando Chega a Noite (2011)',
     cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQx6pCPIQMyVc44I_gq2AQHrT8-TL4HLs67w&s',
+    link: '/Musicas/Musicaqcn',
   },
   {
     id: 'nosso-tempo',
     title: 'O Nosso Tempo é Hoje (2013)',
     cover: 'https://static.qobuz.com/images/covers/26/22/7891430282226_600.jpg',
+    link: '/Musicas/Musicant',
   },
   {
     id: 'acustico',
     title: 'Acústico (2015)',
     cover: 'https://upload.wikimedia.org/wikipedia/pt/thumb/d/d6/Capa_Acustico_Luan_Santana.jpg/250px-Capa_Acustico_Luan_Santana.jpg',
+    link: '/Musicas/Musicaacustico',
   },
   {
     id: '1977',
