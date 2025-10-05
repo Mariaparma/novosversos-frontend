@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* Estilos globais */
 .global {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
@@ -16,7 +15,6 @@
   background: #000000;
 }
 
-/* Cabeçalho */
 .homepage-header {
   width: 100%;
   background: linear-gradient(135deg, #070303 0%, #580707 100%);
@@ -25,6 +23,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
+  flex-wrap: wrap;
 }
 
 .logo-container {
@@ -49,6 +48,7 @@
   padding: 0;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .nav-menu li a {
@@ -62,7 +62,6 @@
   color: #f3f6fa;
 }
 
-/* Conteúdo principal */
 .homepage-main {
   flex: 1;
   padding: 2rem;
@@ -81,7 +80,6 @@
   margin-bottom: 2rem;
 }
 
-/* Rodapé */
 .homepage-footer {
   background: linear-gradient(135deg, #070303 0%, #580707 100%);
   color: white;
@@ -90,25 +88,25 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Cards */
 .cards {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .card {
-background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 100%; /* O card ocupa toda a largura da tela */
-  max-width: 1200px; /* Define um limite máximo para telas muito grandes */
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: white; /* Texto branco */
-  margin: 0 auto; /* Centraliza o card horizontalmente */
+  color: white;
+  margin: 0 auto;
 }
 
 .card:hover {
@@ -118,9 +116,10 @@ background: linear-gradient(135deg, #070303 0%, #580707 100%);
 
 .card-image-container {
   width: 100%;
-  height: 400px; 
+  height: 400px;
   overflow: hidden;
 }
+
 .card-image {
   width: 100%;
   height: 100%;
@@ -135,32 +134,148 @@ background: linear-gradient(135deg, #070303 0%, #580707 100%);
 }
 
 .card-content {
-  padding: 2rem; /* Espaçamento interno */
+  padding: 2rem;
   text-align: center;
 }
 
 .card-content h3 {
-  font-size: 2rem; /* Aumentado o tamanho do título */
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .card-content p {
-  font-size: 1.2rem; /* Aumentado o tamanho do texto */
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
 .card-button {
   display: inline-block;
-  background: white; /* Botão branco */
-  color:  #580707; /* Texto verde */
+  background: white;
+  color: #580707;
   text-decoration: none;
-  padding: 1rem 2rem; /* Aumentado o tamanho do botão */
+  padding: 1rem 2rem;
   border-radius: 8px;
   font-weight: bold;
   transition: background 0.3s, color 0.3s;
 }
 
 .card-button:hover {
-  background: linear-gradient(135deg, #070303 0%, #580707 100%); /* Fundo verde escuro */
-  color: white; /* Texto branco */
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .homepage-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .card-content p {
+    font-size: 1rem;
+  }
+
+  .card-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .card-image-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-main {
+    padding: 1rem;
+  }
+
+  .intro h2 {
+    font-size: 1.4rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .card-content p {
+    font-size: 0.95rem;
+  }
+
+  .card-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .card-image-container {
+    height: 240px;
+  }
+}
+@media (max-width: 768px) {
+  .homepage-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    width: 160px;
+    height: auto;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .nav-menu li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-menu li a {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    width: 140px;
+  }
 }
