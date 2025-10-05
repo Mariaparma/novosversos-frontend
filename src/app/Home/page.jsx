@@ -61,7 +61,7 @@ const HomePage = () => {
             <div className={styles['card-content']}>
               <h4 className={styles['card-title']}>Explore o melhor país pra você fazer sua viagem dos sonhos </h4>
               <h4 className={styles['card-title']}>Descubra a melhor gastronomia da sua viagem dos sonhos </h4>
-              <a href="/paises" className={styles['card-button']}>Descubra Mais</a>
+              <a href="/Galeria" className={styles['card-button']}>Descubra Mais</a>
             </div>
 
               <div className={styles['card-image-container']}>
