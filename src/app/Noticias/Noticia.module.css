@@ -1,0 +1,145 @@
+.container {
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+}
+
+/* ===================== Galeria ===================== */
+.galeriaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 20px;
+  grid-auto-flow: dense;
+  margin-bottom: 60px;
+}
+
+.galeriaCard {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeriaCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.destaque {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  height: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+}
+
+.data {
+  font-size: 0.9rem;
+  color: #ff5555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.titulo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* ===================== NewsPage ===================== */
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.newsCard {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.newsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.newsImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 15px;
+  text-align: left;
+}
+
+.categoria {
+  display: inline-block;
+  background-color: #b30000;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.tempo {
+  display: block;
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.tituloNews {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.autor {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.botaoContainer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.botaoNoticias {
+  background-color: #b30000;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaoNoticias:hover {
+  background-color: #ff0000;
+}
