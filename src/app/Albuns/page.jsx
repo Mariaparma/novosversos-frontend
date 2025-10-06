@@ -5,6 +5,12 @@ import styles from './Albuns.module.css';
 
 const albums = [
   {
+    id: 'to-de-cara',
+    title: 'Tô de Cara (2008)',
+    cover: 'https://upload.wikimedia.org/wikipedia/pt/thumb/f/fb/To_de_Cara_2008.jpg/250px-To_de_Cara_2008.jpg',
+    link: '',
+  },
+  {
     id: 'Musicacg',
     title: 'Ao Vivo em Campo Grande (2009)',
     cover: 'https://upload.wikimedia.org/wikipedia/pt/e/e5/Luan-Santana-Ao-Vivo-2009.jpg',
@@ -58,6 +64,11 @@ const albums = [
     id: 'ao-vivo-na-lua',
     title: 'Ao Vivo na Lua (2024)',
     cover: 'https://i.scdn.co/image/ab67616d0000b273e7071d4b0d4ee1b625fb76cf',
+  },
+    {
+    id: 'registro-historico',
+    title: 'Registro Histórico (2025)',
+    cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ05pbt5ZOP4B6mR_SHiYq0O0rvXxtju_XZ4g&s',
   },
 ];
 

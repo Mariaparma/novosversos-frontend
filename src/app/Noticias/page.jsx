@@ -105,8 +105,8 @@ export default function CombinedNewsPage() {
 
       {/* Botão para todas as notícias */}
       <div className={styles.botaoContainer}>
-        <a href="/todas-noticias" className={styles.botaoNoticias}>
-          Ver Todas as Notícias
+        <a href="/Detalhesnoticias" className={styles.botaoNoticias}>
+          Ver Mais Notícias
         </a>
       </div>
     </div>
