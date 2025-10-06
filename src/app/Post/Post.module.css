@@ -1,0 +1,121 @@
+.container {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.form input,
+.form textarea {
+  background: #1f1f1f;
+  border: 1px solid #333;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.submitButton {
+  background: #e50914;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.submitButton:hover {
+  background: #ff0a16;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.post {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.commentBox {
+  padding: 16px;
+}
+
+.name {
+  color: #ff4d4d;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.message {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.meta {
+  color: #bbb;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.likeSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.likeButton {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.likeButton:hover {
+  background-color: #ff2a2a;
+}
+
+.likesCount {
+  font-size: 0.9rem;
+  color: #ccc;
+}
