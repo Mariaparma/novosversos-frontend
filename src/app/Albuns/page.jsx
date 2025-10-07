@@ -2,6 +2,8 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './Albuns.module.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const albums = [
   {
@@ -70,22 +72,25 @@ const Albuns = () => {
 
   const router = useRouter();
 
+
+
   const handleViewSongs = (album) => {
     const path = album.link || `/musicas/${album.id}`;
     router.push(path);
   };
 
   return (
-    <div className={styles['album-page']}>
-      <h1 className={styles['album-title']}>Álbuns de Luan Santana</h1>
-      <div className={styles['album-grid']}>
+    <div className={styles.albumpage}>
+        <Header />
+      <h1 className={styles.albumtitle}>Álbuns</h1>
+      <div className={styles.albumgrid}>
         {albums.map((album) => (
-          <div className={styles['album-card']} key={album.id}>
-            <img src={album.cover} alt={album.title} className={styles['album-cover']} />
-            <div className={styles['card-content']}>
-              <h2 className={styles['card-title']}>{album.title}</h2>
+          <div className={styles.albumcard} key={album.id}>
+            <img src={album.cover} alt={album.title} className={styles.albumcover} />
+            <div className={styles.cardcontent}>
+              <h2 className={styles.cardtitle}>{album.title}</h2>
               <button
-                className={styles['view-button']}
+                className={styles.viewbutton}
                 onClick={() => handleViewSongs(album)}
               >
                 Ver músicas
@@ -94,7 +99,9 @@ const Albuns = () => {
           </div>
         ))}
       </div>
+      < Footer />
     </div>
+    
   );
 };
 
