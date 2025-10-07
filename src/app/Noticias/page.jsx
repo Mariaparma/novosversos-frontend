@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Noticia.module.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 // Dados da Galeria
 const galerias = [
@@ -70,6 +72,7 @@ const newsData = [
 export default function CombinedNewsPage() {
   return (
     <div className={styles.container}>
+      <Header />
       {/* Galeria */}
       <h1>Galeria de Notícias</h1>
       <div className={styles.galeriaGrid}>
@@ -109,6 +112,7 @@ export default function CombinedNewsPage() {
           Ver Mais Notícias
         </a>
       </div>
+      <Footer />
     </div>
   );
 }
