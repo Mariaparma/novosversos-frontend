@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "./Post.module.css";
+import Header from "../components/Header"
+import Footer from "../components/Footer";
 
 export default function PostPage() {
   const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api/posts";
@@ -14,7 +16,7 @@ export default function PostPage() {
     location: "",
   });
 
-  // Buscar posts existentes
+  
   const fetchPosts = async () => {
     try {
       const response = await fetch(API_BASE);
@@ -29,7 +31,7 @@ export default function PostPage() {
     }
   };
 
-  // Criar novo post
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -58,6 +60,8 @@ export default function PostPage() {
 
   return (
     <div className={styles.container}>
+
+      <Header />
       <h1 className={styles.title}>Postagens dos Fãs 💬</h1>
 
       {/* Formulário de criação */}
@@ -123,6 +127,7 @@ export default function PostPage() {
           ))}
         </div>
       )}
+       < Footer />
     </div>
   );
 }
