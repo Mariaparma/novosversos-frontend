@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import styles from './Shows.module.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const shows = [
@@ -57,24 +59,7 @@ export default function ShowsCarousel() {
 
   return (
     <div className={`${styles.global} ${styles.homepage}`}>
-      <header className={styles['homepage-header']}>
-        <div className={styles['logo-container']}>
-          <img
-            src="/icons/novosversos.png"
-            alt="Novos Versos Logo"
-            className={styles.logo}
-          />
-        </div>
-        <nav>
-          <ul className={styles['nav-menu']}>
-            <li><a href="/Paises">Notícias</a></li>
-            <li><a href="/servicos">Shows</a></li>
-            <li><a href="/contato">Álbuns e Músicas</a></li>
-            <li><a href="/contato">Galeria</a></li>
-            <li><a href="/contato">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
 
       <main className={styles.carouselContainer}>
         <h2 className={styles.title}>Próximos Shows</h2>
@@ -107,6 +92,9 @@ export default function ShowsCarousel() {
           ))}
         </Slider>
       </main>
+       <Footer />
     </div>
   );
 }
+
+
