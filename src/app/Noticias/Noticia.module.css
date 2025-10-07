@@ -1,12 +1,12 @@
 .container {
   padding: 40px;
-  font-family: 'Segoe UI', sans-serif;
- background-color: #141414;
+   font-family: 'Courier New', Courier, monospace;
+ background: linear-gradient(135deg, #070303 0%, #580707 100%);
   color: #fff;
   text-align: center;
 }
 
-/* ===================== Galeria ===================== */
+
 .galeriaGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -60,7 +60,6 @@
   font-weight: bold;
 }
 
-/* ===================== NewsPage ===================== */
 .newsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
