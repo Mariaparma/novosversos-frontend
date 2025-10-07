@@ -4,21 +4,51 @@ import styles from './Shows.module.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+
 const shows = [
-  { date: '15/09/2025', event: 'Expopec 2025', location: 'Ituiutaba, MG' },
-  { date: '20/09/2025', event: 'Rodeo Festival', location: 'Jaguariúna, SP' },
-  { date: '27/09/2025', event: 'Franca Rodeo Music', location: 'Franca, SP' },
-  { date: '30/10/2025', event: 'Turnê Internacional', location: 'Madrid, Espanha' },
-  { date: '01/11/2025', event: 'Turnê Internacional', location: 'Genebra, Suíça' },
-  { date: '22/11/2025', event: 'Tour Ao Vivo na Lua', location: 'Recife, PE' },
-  { date: '27/12/2025', event: 'Let’s Pipa Réveillon', location: 'Tibau do Sul, RN' },
+  {
+    date: '15/09/2025',
+    event: 'Expopec 2025',
+    location: 'Ituiutaba, MG',
+    image: 'https://www.ituiutaba.mg.gov.br/temp/e11691450248f704201b9a74a96b985f.jpg', 
+  },
+  {
+    date: '20/09/2025',
+    event: 'Jaguariuna Rodeo Festival',
+    location: 'Jaguariúna, SP',
+    image: 'https://i0.wp.com/www.agitossp.com.br/wp-content/uploads/2025/09/535350096_18523327195057841_1035785359981051382_n.jpg',
+  },
+  {
+    date: '27/09/2025',
+    event: 'Franca Rodeo Music',
+    location: 'Franca, SP',
+    image: 'https://9382cdebf7.clvaw-cdnwnd.com/9b71833bc45df38b547939216d0d77fa/200021475-3643336435/WhatsApp%20Image%202025-08-26%20at%2016.36.42.jpeg?ph=9382cdebf7',
+  },
+  {
+    date: '01/11/2025',
+    event: 'Turnê Internacional',
+    location: 'Madri, Espanha',
+    image: 'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1060743533%2F2527581533171%2F1%2Foriginal.20250625-221837?crop=focalpoint&fit=crop&w=600&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=f4774ad80ce19b96c06ecba25f5fa0eb',
+  },
+  {
+    date: '22/11/2025',
+    event: 'Tour Ao Vivo na Lua',
+    location: 'Recife, PE',
+    image: 'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1060743533%2F2527581533171%2F1%2Foriginal.20250625-221837?crop=focalpoint&fit=crop&w=600&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=f4774ad80ce19b96c06ecba25f5fa0eb',
+  },
+  {
+    date: '27/12/2025',
+    event: 'Let’s Pipa Réveillon',
+    location: 'Salvador, BA',
+    image: 'https://akamai.sscdn.co/tb/letras-news/wp-content/uploads/2025/04/8846843-luan-santana-turne-ao-vivo-na-lua-1024x735.jpg',
+  },
 ];
 
 export default function ShowsCarousel() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -29,7 +59,11 @@ export default function ShowsCarousel() {
     <div className={`${styles.global} ${styles.homepage}`}>
       <header className={styles['homepage-header']}>
         <div className={styles['logo-container']}>
-          <img src="/icons/novosversos.png" alt="Estrela Guia Logo" className={styles.logo} />
+          <img
+            src="/icons/novosversos.png"
+            alt="Novos Versos Logo"
+            className={styles.logo}
+          />
         </div>
         <nav>
           <ul className={styles['nav-menu']}>
@@ -47,10 +81,10 @@ export default function ShowsCarousel() {
 
         <div className={styles.description}>
           <p>
-            A cada cidade, uma nova história. A cada palco, uma nova emoção. Luan Santana segue encantando multidões com sua voz marcante e presença única. Em 2025, sua turnê percorre o Brasil e o mundo, levando não apenas música, mas também afeto, nostalgia e celebração.
+            A cada cidade, uma nova história. A cada palco, uma nova emoção. Luan Santana segue encantando multidões com sua voz marcante e presença única.
           </p>
           <p>
-            Prepare-se para noites inesquecíveis, onde cada acorde é uma lembrança e cada refrão é um convite para cantar junto. Seja em Ituiutaba, Madrid ou Tibau do Sul, o espetáculo é garantido — e você é parte dele.
+            Em 2025, sua turnê percorre o Brasil e o mundo, levando não apenas música, mas também afeto, nostalgia e celebração.
           </p>
         </div>
 
@@ -59,8 +93,8 @@ export default function ShowsCarousel() {
             <div key={index} className={styles.card}>
               <div className={styles.cardImageContainer}>
                 <img
-                  src={`https://source.unsplash.com/800x300/?concert,stage,${index}`}
-                  alt="Show"
+                  src={show.image}
+                  alt={`Show ${show.event}`}
                   className={styles.cardImage}
                 />
               </div>
