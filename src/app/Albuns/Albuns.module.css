@@ -1,4 +1,4 @@
-.album-page {
+.albumpage {
   font-family: 'Courier New', Courier, monospace;
  background: linear-gradient(135deg, #070303 0%, #580707 100%);
   color: #fff;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.album-title {
+.albumtitle {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   background: linear-gradient(135deg, #070303 0%, #580707 100%);
@@ -15,14 +15,14 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-.album-grid {
+.albumgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   padding: 1rem;
 }
 
-.album-card {
+.albumcard {
   background-color: #ffffff; 
   border-radius: 16px;
   padding: 1.5rem;
@@ -33,12 +33,12 @@
   align-items: center;
 }
 
-.album-card:hover {
+.albumcard:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 32px rgba(255, 78, 80, 0.3);
 }
 
-.album-cover {
+.albumcover {
   width: 240px;
   height: 240px;
   border-radius: 12px;
@@ -48,23 +48,23 @@
   object-fit: cover;
 }
 
-.album-card:hover .album-cover {
+.albumcard:hover .albumcover {
   transform: scale(1.05);
   filter: grayscale(0%);
 }
 
-.card-content {
+.cardcontent {
   text-align: center;
 }
 
-.card-title {
+.cardtitle {
   font-size: 1.2rem;
   color:#580707;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
   font-family: 'Courier New', Courier, monospace;
 }
 
-.view-button {
+.viewbutton {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
   background: #580707;
@@ -77,7 +77,7 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-.view-button:hover {
+.viewbutton:hover {
   background: linear-gradient(135deg, #070303 0%, #580707 100%);
   color: #fff;
 }
