@@ -1,0 +1,46 @@
+.homepage-header {
+  width: 100%;
+  background: linear-gradient(135deg, #070303 0%, #580707 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 120px;
+  width: 200px;
+  object-fit: contain;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #f3f6fa;
+}
