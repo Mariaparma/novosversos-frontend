@@ -42,10 +42,10 @@ export default function PostPage() {
       const data = await response.json();
       console.log("✅ Resposta da API (novo post):", data);
 
-      // Atualiza a lista de posts
+      // Atualiza lista de posts
       setPosts([data, ...posts]);
 
-      // Limpa formulário
+      // Limpa o formulário
       setFormData({ name: "", message: "", image: "", tags: "", location: "" });
     } catch (error) {
       console.error("Erro ao criar post:", error);
@@ -55,21 +55,6 @@ export default function PostPage() {
   useEffect(() => {
     fetchPosts();
   }, []);
-
-  const handleLike = async (id) => {
-    try {
-      const response = await fetch(`${API_BASE}/${id}/like`, { method: "PATCH" });
-      if (response.ok) {
-        setPosts((prev) =>
-          prev.map((post) =>
-            post.id === id ? { ...post, likes: post.likes + 1 } : post
-          )
-        );
-      }
-    } catch (error) {
-      console.error("Erro ao curtir:", error);
-    }
-  };
 
   return (
     <div className={styles.container}>
@@ -113,11 +98,11 @@ export default function PostPage() {
         </button>
       </form>
 
-      {/* Feed de posts */}
+      {/* Feed em grid */}
       {loading ? (
         <p className={styles.loading}>Carregando posts...</p>
       ) : (
-        <div className={styles.feed}>
+        <div className={styles.grid}>
           {posts.map((post) => (
             <div key={post.id} className={styles.post}>
               {post.image && <img src={post.image} alt="Post" className={styles.image} />}
@@ -133,15 +118,6 @@ export default function PostPage() {
                     ? new Date(post.created_at).toLocaleString("pt-BR")
                     : ""}
                 </p>
-                <div className={styles.likeSection}>
-                  <button
-                    onClick={() => handleLike(post.id)}
-                    className={styles.likeButton}
-                  >
-                    Curtir
-                  </button>
-                  <span className={styles.likesCount}>{post.likes} curtidas</span>
-                </div>
               </div>
             </div>
           ))}
