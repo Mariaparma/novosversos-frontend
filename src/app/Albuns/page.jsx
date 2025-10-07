@@ -5,12 +5,6 @@ import styles from './Albuns.module.css';
 
 const albums = [
   {
-    id: 'to-de-cara',
-    title: 'Tô de Cara (2008)',
-    cover: 'https://upload.wikimedia.org/wikipedia/pt/thumb/f/fb/To_de_Cara_2008.jpg/250px-To_de_Cara_2008.jpg',
-    link: '',
-  },
-  {
     id: 'Musicacg',
     title: 'Ao Vivo em Campo Grande (2009)',
     cover: 'https://upload.wikimedia.org/wikipedia/pt/e/e5/Luan-Santana-Ao-Vivo-2009.jpg',
@@ -73,6 +67,7 @@ const albums = [
 ];
 
 const Albuns = () => {
+
   const router = useRouter();
 
   const handleViewSongs = (album) => {
