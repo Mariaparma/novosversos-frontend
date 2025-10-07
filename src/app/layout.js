@@ -4,7 +4,7 @@ export const metadata = {
     title: "Novos Versos",
     description: "Projeto Final Individual ",
     icons: {
-        icon: "/icons/estrelaguia.png",
+        icon: "/icons/novosversos.png",
     },
 };
 
