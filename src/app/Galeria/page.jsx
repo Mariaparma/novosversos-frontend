@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./Galeria.module.css";
 
@@ -68,6 +69,17 @@ export default function GaleriaPolaroid() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className={styles.areaFas}>
+        <h2>Faça parte da Área de Fãs</h2>
+        <p>Entre para a comunidade e viva experiências exclusivas com o Luan Santana!</p>
+        <button
+          className={styles.botaoFas}
+          onClick={() => window.location.href = "/Post"}
+        >
+          Entrar na Área de Fãs
+        </button>
       </div>
     </div>
   );
