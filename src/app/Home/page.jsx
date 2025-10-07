@@ -31,7 +31,7 @@ const HomePage = () => {
             <div className={styles['card-content']}>
               <h4 className={styles['card-title']}>Explore as princípais notícias do Luan Santana</h4>  
               <h4 className={styles['card-title']}>Descubra os próximos shows do Luan Santana</h4>
-             <a href="/Paises" className={styles['card-button']}>Descubra Mais</a>
+             <a href="/Noticias" className={styles['card-button']}>Descubra Mais</a>
             </div>
             
             <div className={styles['card-image-container']}>
@@ -49,8 +49,8 @@ const HomePage = () => {
             </div>
 
             <div className={styles['card-content']}>
-              <h4 className={styles['card-title']}>Explore o melhor país pra você fazer sua viagem dos sonhos </h4>
-              <h4 className={styles['card-title']}>Descubra a melhor gastronomia da sua viagem dos sonhos </h4>
+              <h4 className={styles['card-title']}>Explore os albúns do Luan Santana </h4>
+              <h4 className={styles['card-title']}>Descubra o trecho das músicas de cada albúm </h4>
               <a href="/Albuns" className={styles['card-button']}>Descubra Mais</a>
             </div>
 
@@ -59,8 +59,8 @@ const HomePage = () => {
             </div>
 
             <div className={styles['card-content']}>
-              <h4 className={styles['card-title']}>Explore o melhor país pra você fazer sua viagem dos sonhos </h4>
-              <h4 className={styles['card-title']}>Descubra a melhor gastronomia da sua viagem dos sonhos </h4>
+              <h4 className={styles['card-title']}>Veja a galeria de fotos do cantor  </h4>
+              <h4 className={styles['card-title']}>E participe da área de fãs deixando seu Post! </h4>
               <a href="/Galeria" className={styles['card-button']}>Descubra Mais</a>
             </div>
 
@@ -69,9 +69,9 @@ const HomePage = () => {
             </div>
 
             <div className={styles['card-content']}>
-              <h4 className={styles['card-title']}>Explore o melhor país pra você fazer sua viagem dos sonhos </h4>
-              <h4 className={styles['card-title']}>Descubra a melhor gastronomia da sua viagem dos sonhos </h4>
-              <a href="/paises" className={styles['card-button']}>Descubra Mais</a>
+              <h4 className={styles['card-title']}>Entre em contato conosco! </h4>
+              <h4 className={styles['card-title']}>Tire suas Dúvidas</h4>
+              <a href="/Contato" className={styles['card-button']}>Descubra Mais</a>
             </div>
 
 
