@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './Musicacg.module.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const album = {
   titulo: 'Ao Vivo em Campo Grande (2009)',
@@ -59,6 +61,7 @@ const album = {
 export default function Musicacg() {
   return (
     <div className={styles.albumPage}>
+      <Header />
       <div className={styles.albumLayout}>
         <div className={styles.albumLeft}>
           <img
@@ -81,6 +84,7 @@ export default function Musicacg() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

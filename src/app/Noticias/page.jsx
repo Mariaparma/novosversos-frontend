@@ -73,7 +73,6 @@ export default function CombinedNewsPage() {
   return (
     <div className={styles.container}>
       <Header />
-      {/* Galeria */}
       <h1>Galeria de Notícias</h1>
       <div className={styles.galeriaGrid}>
         {galerias.map((item, index) => (

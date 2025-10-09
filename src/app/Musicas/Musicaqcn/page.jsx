@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './Musicaqcn.module.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const album = {
   titulo: 'Quando Chega a Noite (2012)',
@@ -59,6 +61,7 @@ const album = {
 export default function MusicaNoite() {
   return (
     <div className={styles.albumPage}>
+      <Header />
       <div className={styles.albumLayout}>
         <div className={styles.albumLeft}>
           <img
@@ -81,6 +84,7 @@ export default function MusicaNoite() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

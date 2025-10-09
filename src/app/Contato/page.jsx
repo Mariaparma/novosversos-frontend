@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./Contato.module.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -18,6 +20,7 @@ export default function ContactPage() {
 
   return (
     <div className={styles.container}>
+      <Header />
       <h1 className={styles.title}>Entre em Contato </h1>
       <p className={styles.subtitle}>
         Tem alguma dúvida, sugestão ou quer apenas mandar um alô?  
@@ -55,6 +58,7 @@ export default function ContactPage() {
           Enviar Mensagem
         </button>
       </form>
+      <Footer />
     </div>
   );
 }

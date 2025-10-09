@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import styles from "./Galeria.module.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const eventos = [
   {
@@ -58,6 +60,7 @@ const eventos = [
 export default function GaleriaPolaroid() {
   return (
     <div className={styles.galeria}>
+      <Header />
       <h1 className={styles.titulo}>Galeria</h1>
       <div className={styles.grade}>
         {eventos.map((evento, index) => (
@@ -81,6 +84,7 @@ export default function GaleriaPolaroid() {
           Entrar na Área de Fãs
         </button>
       </div>
+      <Footer />
     </div>
   );
 }

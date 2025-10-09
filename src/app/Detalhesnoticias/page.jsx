@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Detalhesnoticias.module.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const noticias = [
   {
@@ -63,6 +65,7 @@ const noticias = [
 const NoticiasDetalhes = () => {
   return (
     <div className={styles.container}>
+      <Header />
       {noticias.map((noticia) => (
         <div key={noticia.id} className={styles.card}>
           <div className={styles.banner}>
@@ -90,6 +93,7 @@ const NoticiasDetalhes = () => {
           </div>
         </div>
       ))}
+      <Footer />
     </div>
   );
 };

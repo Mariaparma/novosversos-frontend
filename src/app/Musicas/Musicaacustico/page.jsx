@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './MusicaAcustico.module.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const album = {
   titulo: 'Acústico (2015)',
@@ -64,6 +66,7 @@ const album = {
 export default function MusicaAcustico() {
   return (
     <div className={styles.albumPage}>
+      <Header />
       <div className={styles.albumLayout}>
         <div className={styles.albumLeft}>
           <img
@@ -86,6 +89,7 @@ export default function MusicaAcustico() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
